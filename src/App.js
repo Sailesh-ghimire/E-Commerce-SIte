@@ -1,14 +1,16 @@
 import './App.css';
-import Hello from './Hello';
+import Footer from './components/Footer';
+import Landing from './components/Landing';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <div className="App">
-      <div>
-      <h1 className='text-red-500'>This is css</h1>
-      <Hello></Hello>
-      </div>
-    </div>
+    <>
+    
+<Navbar home="home" about = "abutus" contact="contact"/>
+<Landing/>
+<Footer/>
+    </>
   );
 }
 
