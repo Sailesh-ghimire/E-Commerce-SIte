@@ -3,6 +3,11 @@ import React from 'react'
 export default function Landing() {
     return (
         <div>
+            <info className='info'>
+                <div>
+                    
+                </div>
+            </info>
             <prod className="product">
 
                 <div className="grid grid-cols-3 gap-2 bg-blue-400">
