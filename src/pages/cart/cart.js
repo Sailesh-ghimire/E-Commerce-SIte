@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { PRODUCTS } from "../../products"
 import { ShopContext } from '../../context/shop-context';
-import { cartItem } from './cart-item'
+import { CartItem } from './cart-item'
 
 import { useNavigate } from 'react-router-dom'
 
@@ -13,12 +13,12 @@ export const Cart = () => {
   return (
     <div className='cart'>
       <div>
-        <h1>Your cart Items</h1>
+        <h1>Your Cart Items</h1>
       </div>
-      <div className='cartItems'>
+      <div className='cart'>
         {PRODUCTS.map((product) => {
           if (cartItems[product.id] != 0) {
-            return <cartItem data={product} />
+            return <CartItem data={product} />
           }
         })}
       </div>
@@ -26,7 +26,12 @@ export const Cart = () => {
         <div className="checkout">
           <p>SubTotal: ${totalAmount}</p>
           <button onClick={() => navigate("/")}>Continue Shopping</button>
-          <button>Checkout</button>
+          <button onClick={()=>{
+            checkout()
+            navigate("/checkout")
+            }}>
+            {" "}
+            Checkout{" "}</button>
         </div>
       ) : (
         <h1>Your Cart is Empty</h1>
