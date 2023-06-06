@@ -11,13 +11,13 @@ export const Cart = () => {
 
   const navigate = useNavigate()
   return (
-    <div className='cart'>
+    <div className='cart flex flex-col justify-center items-center'>
       <div>
         <h1>Your Cart Items</h1>
       </div>
-      <div className='cart'>
+      <div className='cart flex flex-col justify-center items-center'>
         {PRODUCTS.map((product) => {
-          if (cartItems[product.id] != 0) {
+          if (cartItems[product.id] !== 0) {
             return <CartItem data={product} />
           }
         })}
@@ -25,9 +25,11 @@ export const Cart = () => {
       {totalAmount > 0 ? (
         <div className="checkout">
           <p>SubTotal: ${totalAmount}</p>
-          <button onClick={() => navigate("/")}>Continue Shopping</button>
-          <button onClick={()=>{
-            checkout()
+          <button className='h-12 w-40 bg-slate-500 text-white border-none rounded-lg m-3 cursor-pointer ' 
+          onClick={() => navigate("/")}>Continue Shopping</button>
+          <button className='h-12 w-40 bg-slate-500 text-white border-none rounded-lg m-3 cursor-pointer' 
+          onClick={()=>{
+            // checkout()
             navigate("/checkout")
             }}>
             {" "}

@@ -7,10 +7,10 @@ export const CartItem = (props) => {
     const { cartItems, addToCart, removeFromCart, updateCartItemCount } = useContext(ShopContext)
 
     return (
-        <div className='cartItem'>
+        <div className='cartItem w-72 h-64 flex items-center shadow-md rounded-3xl m-8'>
 
-            <img src={productImage} />
-            <div className="description">
+            <img className='w-52' src={productImage} />
+            <div className="description w-10 items-center font-bold">
                 <p>
 
                     <b>{productName}</b>
@@ -18,7 +18,7 @@ export const CartItem = (props) => {
                 <p>Price: ${price}</p>
                 <div className='countHandler'>
                     <button onClick={() => removeFromCart(id)}>-</button>
-                    <input value={cartItems[id]} onChange={(e) => updateCartItemCount(Number(e.target.value), id)} />
+                    <input className='w-10 items-center font-bold' value={cartItems[id]} onChange={(e) => updateCartItemCount(Number(e.target.value), id)} />
                     <button onClick={() => addToCart(id)}>+</button>
                 </div>
             </div>
