@@ -6,5 +6,26 @@ export const PRODUCTS = [
        productName: "Extinguisher",
        price: 100.0,
        productImage: product1,
-    }
+    },
+
+    {
+        id: 2,
+        productName: "Extinguisher",
+        price: 100.0,
+        productImage: product1,
+     },
+
+     {
+        id: 3,
+        productName: "Extinguisher",
+        price: 100.0,
+        productImage: product1,
+     },
+
+     {
+        id: 4,
+        productName: "Extinguisher",
+        price: 100.0,
+        productImage: product1,
+     }
 ]
