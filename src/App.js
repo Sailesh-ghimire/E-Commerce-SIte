@@ -9,7 +9,7 @@ import { Shop } from './pages/shop/shop';
 import { ShopContextProvider } from './context/shop-context';
 import { Sidebar } from './components/Sidebar';
 import { Home } from './pages/home';
-import { List } from './pages/list/list';
+// import { List } from './pages/list/list';
 import { Login } from './pages/login/login';
 import { New } from './pages/new/new';
 import { Single } from './pages/single/single';
@@ -38,16 +38,16 @@ function App() {
               <Route path="sidebar" element={<Sidebar />} />
               <Route path="login" element={<Login />} />
               <Route path="users">
-                <Route index element={<List />}/>
+                {/* <Route index element={<List />}/>
                 <Route path=":userId" element={<Single/>} />
-                <Route path="new" element={<New/>} />
+                <Route path="new" element={<New/>} /> */}
 
             </Route>
 
             <Route path="products">
-                <Route index element={<List />}/>
+                {/* <Route index element={<List />}/>
                 <Route path=":productId" element={<Single/>} />
-                <Route path="new" element={<New/>} />
+                <Route path="new" element={<New/>} /> */}
 
             </Route>
 
