@@ -1,11 +1,10 @@
-import React from 'react'
-
+import React from "react";
 import Sidebar from "../../components/Sidebar";
 import Navbar from "../../components/Navbar";
 import Chart from "../../components/Chart";
-import List from "../../components/Table";
+// import List from "../../components/Table";
 
-export const Single = () => {
+const Single = () => {
   return (
     <div className="single">
       <Sidebar />
@@ -50,7 +49,7 @@ export const Single = () => {
         </div>
         <div className="bottom">
         <h1 className="title">Last Transactions</h1>
-          <List/>
+          {/* <List/> */}
         </div>
       </div>
     </div>

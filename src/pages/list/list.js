@@ -2,15 +2,15 @@ import React from 'react'
 
 import Sidebar from "../../components/Sidebar"
 import Navbar from "../../components/Navbar"
-import Datatable from "../../components/Datatable"
+// import Datatable from "../../components/Datatable"
 
 export const List = () => {
   return (
     <div className="list">
-      <Sidebar />
+      <Sidebar/>
       <div className="listContainer">
-        <Navbar />
-        <Datatable />
+        <Navbar/>
+        {/* <Datatable/> */}
       </div>
     </div>
   )
