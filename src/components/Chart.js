@@ -19,8 +19,8 @@ const data = [
 
 export const Chart = ({ aspect, title }) => {
   return (
-    <div className="chart">
-      <div className="title">{title}</div>
+    <div className="chart shadow-md flex-1 p-3 text-slate-600">
+      <div className="title mb-5">{title}</div>
       <ResponsiveContainer width="100%" aspect={aspect}>
         <AreaChart
           width={730}
@@ -35,7 +35,7 @@ export const Chart = ({ aspect, title }) => {
             </linearGradient>
           </defs>
           <XAxis dataKey="name" stroke="gray" />
-          <CartesianGrid strokeDasharray="3 3" className="chartGrid" />
+          <CartesianGrid strokeDasharray="3 3" className="chartGrid stroke-green-600" />
           <Tooltip />
           <Area
             type="monotone"

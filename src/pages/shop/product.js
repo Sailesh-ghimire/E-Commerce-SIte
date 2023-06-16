@@ -8,7 +8,7 @@ export const Product = (props) => {
     const cartItemCount = cartItems[id]
     return (
         <div className='product hover:cursor-pointer hover:transition-none rounded-2xl w-80 m-24 h-80 flex flex-col justify-center items-center'>
-            <img className='w-96' src={productImage} />
+            <img className='w-96' src={productImage}/>
             <div className="description text-center">
                 <p>
                     <b>

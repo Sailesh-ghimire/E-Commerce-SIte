@@ -6,9 +6,9 @@ import Navbar from "../../components/Navbar"
 
 export const List = () => {
   return (
-    <div className="list">
+    <div className="list flex w-full">
       <Sidebar/>
-      <div className="listContainer">
+      <div className="listContainer flex-1">
         <Navbar/>
         {/* <Datatable/> */}
       </div>

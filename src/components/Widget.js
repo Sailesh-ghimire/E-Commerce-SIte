@@ -79,16 +79,16 @@ export const Widget = ({ type }) => {
   }
 
   return (
-    <div className="widget">
-      <div className="left">
-        <span className="title">{data.title}</span>
-        <span className="counter">
+    <div className="widget flex justify-between flex-1 p-2 shadow-md rounded-xl h-24">
+      <div className="left flex flex-col justify-between">
+        <span className="title font-bold text-sm text-red-600">{data.title}</span>
+        <span className="counter text-sm font-light">
           {data.isMoney && "$"} {amount}
         </span>
-        <span className="link">{data.link}</span>
+        <span className="link w-max text-xs border-b border-solid border-slate-600">{data.link}</span>
       </div>
-      <div className="right">
-        <div className="percentage positive">
+      <div className="right flex flex-col justify-between">
+        <div className="percentage positive flex items-center text-sm text-green-600">
           <KeyboardArrowUpIcon />
           {diff} %
         </div>

@@ -69,6 +69,11 @@
 
 
 import Home from "./pages/home";
+import { MainNavbar } from './components/MainNavbar';
+import { Cart } from './pages/cart/cart';
+import { Shop } from './pages/shop/shop';
+import { ShopContextProvider } from './context/shop-context';
+import Landing from './components/Landing/Landing';
 import Login from "./pages/login/login";
 import List from "./pages/list/list";
 import Single from "./pages/single/single";
@@ -84,10 +89,15 @@ function App() {
 
   return (
     <div className={darkMode ? "app dark" : "app"}>
+      <ShopContextProvider>
       <BrowserRouter>
+      <MainNavbar/>
         <Routes>
           <Route path="/">
-            <Route index element={<Home />} />
+            <Route index element={<Landing />} />
+            <Route path="/home" elements={<Home />} />
+//          <Route path="/cart" element={<Cart />} />
+            <Route path="/shop" element={<Shop />} />
             <Route path="login" element={<Login />} />
             <Route path="users">
               <Route index element={<List />} />
@@ -108,6 +118,7 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
+      </ShopContextProvider>
     </div>
   );
 }

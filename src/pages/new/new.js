@@ -8,16 +8,16 @@ export const New = ({ inputs, title }) => {
   const [file, setFile] = useState("");
 
   return (
-    <div className="new">
+    <div className="new w-full flex">
       <Sidebar />
-      <div className="newContainer">
+      <div className="newContainer flex-1">
         <Navbar />
-        <div className="top">
-          <h1>{title}</h1>
+        <div className="top shadow-md p-3 m-5 flex">
+          <h1 className="text-slate-600 text-xl">{title}</h1>
         </div>
-        <div className="bottom">
-          <div className="left">
-            <img
+        <div className="bottom shadow-md p-3 m-5 flex">
+          <div className="left flex-1 text-center">
+            <img className=" w-24 h-24 rounded-full object-cover"
               src={
                 file
                   ? URL.createObjectURL(file)
@@ -26,13 +26,13 @@ export const New = ({ inputs, title }) => {
               alt=""
             />
           </div>
-          <div className="right">
-            <form>
-              <div className="formInput">
-                <label htmlFor="file">
-                  Image: <DriveFolderUploadOutlinedIcon className="icon" />
+          <div className="right flex-1">
+            <form className="flex flex-wrap gap-8 justify-around">
+              <div className="formInput w-2/5">
+                <label className="flex items-center gap-3" htmlFor="file">
+                  Image: <DriveFolderUploadOutlinedIcon className="icon cursor-pointer" />
                 </label>
-                <input
+                <input className="w-full p-1 border-none border-slate-600 border-b"
                   type="file"
                   id="file"
                   onChange={(e) => setFile(e.target.files[0])}
@@ -46,7 +46,7 @@ export const New = ({ inputs, title }) => {
                   <input type={input.type} placeholder={input.placeholder} />
                 </div>
               ))}
-              <button>Send</button>
+              <button className="w-40 p-3 border-none bg-teal-600 cursor-pointer mt-2">Send</button>
             </form>
           </div>
         </div>
