@@ -4,6 +4,7 @@ import Widget from "../components/Widget";
 import Featured from "../components/Featured";
 import Chart from "../components/Chart";
 import React from "react";
+
 // import Table from "../components/Table";
 
 export const Home = () => {
