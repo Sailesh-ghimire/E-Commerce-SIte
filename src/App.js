@@ -67,22 +67,23 @@
 
 
 
-
-import Home from "./pages/home";
+import "./App.css";
+import {Home} from "./pages/home";
 import { MainNavbar } from './components/MainNavbar';
 import { Cart } from './pages/cart/cart';
 import { Shop } from './pages/shop/shop';
 import { ShopContextProvider } from './context/shop-context';
-import Landing from './components/Landing/Landing';
 import Login from "./pages/login/login";
-import List from "./pages/list/list";
-import Single from "./pages/single/single";
 // import New from "./pages/new/new";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import { productInputs, userInputs } from "./formSource";
 import "./style/dark.css";
 import { useContext } from "react";
 import { DarkModeContext } from "./context/darkModeContext";
+import {Landing2} from "./pages/landing/Landing";
+import Footer from './components/Footer';
+import Products from "./pages/landing/Products";
+import Product from "./pages/landing/Product";
 
 function App() {
   const { darkMode } = useContext(DarkModeContext);
@@ -94,29 +95,28 @@ function App() {
       <MainNavbar/>
         <Routes>
           <Route path="/">
-            <Route index element={<Landing />} />
-            <Route path="/home" elements={<Home />} />
-//          <Route path="/cart" element={<Cart />} />
-            <Route path="/shop" element={<Shop />} />
+            <Route index element={<Landing2 />} />
+            {/* <Route path="demo" element={<Landing2 />} /> */}
+            <Route path="admin" element={<Home />} />
+          <Route path="cart" element={<Cart />} />
+            <Route path="shop" element={<Shop />} />
             <Route path="login" element={<Login />} />
-            <Route path="users">
-              <Route index element={<List />} />
-              <Route path=":userId" element={<Single />} />
-              {/* <Route
-                path="new"
-                element={<New inputs={userInputs} title="Add New User" />}
-              /> */}
-            </Route>
+            
             <Route path="products">
-              <Route index element={<List />} />
-              <Route path=":productId" element={<Single />} />
+              
+              <Route path=":id" element={<Products />} />
               {/* <Route
                 path="new"
                 element={<New inputs={productInputs} title="Add New Product" />}
               /> */}
             </Route>
+            <Route path="product">
+              
+              <Route path=":id" element={<Product />} />
+              </Route>
           </Route>
         </Routes>
+        <Footer/>
       </BrowserRouter>
       </ShopContextProvider>
     </div>

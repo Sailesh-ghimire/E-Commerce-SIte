@@ -1,42 +1,54 @@
 import React from "react";
-import cat from "../images/1.jpg";
-import FacebookIcon from '@mui/icons-material/Facebook';
-import YouTubeIcon from '@mui/icons-material/YouTube';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import TwitterIcon from '@mui/icons-material/Twitter';
+import "./Footer.css";
 
 export const Footer = () => {
   return (
-    <div className="footer-wrapper my-24 mx-0 flex mt-40">
-      <div className="footer-section-one">
-        <div className="footer-logo-container max-w-xs">
-          <img className="max-w-full h-auto" src={cat} alt="" />
+    <div className="footer">
+      <div className="top">
+        <div className="item">
+          <h1>Categories</h1>
+          <span>Women</span>
+          <span>Men</span>
+          <span>Shoes</span>
+          <span>Accessories</span>
+          <span>New Arrivals</span>
         </div>
-        <div className="footer-icons mt-10">
-          <TwitterIcon/>
-          <LinkedInIcon/>
-          <YouTubeIcon/>
-            <FacebookIcon/>
+        <div className="item">
+          <h1>Links</h1>
+          <span>FAQ</span>
+          <span>Pages</span>
+          <span>Stores</span>
+          <span>Compare</span>
+          <span>Cookies</span>
+        </div>
+        <div className="item">
+          <h1>About</h1>
+          <span>
+            Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit
+            amet conse ctetur adipisicing elit, seddo eiusmod tempor incididunt
+            ut labore etdolore.
+          </span>
+        </div>
+        <div className="item">
+          <h1>Contact</h1>
+          <span>
+            Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit
+            amet conse ctetur adipisicing elit, seddo eiusmod tempor incididunt
+            ut labore etdolore.
+          </span>
         </div>
       </div>
-      <div className="footer-section-two flex-1 flex justify-end">
-        <div className="footer-section-columns flex flex-col min-w-min">
-          <span className="cursor-pointer my-1 mx-0 font-semibold text-slate-600 ">Qualtiy</span>
-          <span className="cursor-pointer my-1 mx-0 font-semibold text-slate-600 ">Help</span>
-          <span className="cursor-pointer my-1 mx-0 font-semibold text-slate-600 ">Share</span>
-          <span className="cursor-pointer my-1 mx-0 font-semibold text-slate-600 ">Carrers</span>
-          <span className="cursor-pointer my-1 mx-0 font-semibold text-slate-600 ">Testimonials</span>
-          <span className="cursor-pointer my-1 mx-0 font-semibold text-slate-600 ">Work</span>
+      <div className="bottom">
+        <div className="left">
+          <span className="logo">Lamastore</span>
+          <span className="copyright">
+            © Copyright 2023. All Rights Reserved
+          </span>
         </div>
-        <div className="footer-section-columns flex flex-col min-w-min">
-          <span className="cursor-pointer my-1 mx-0 font-semibold text-slate-600 ">244-5333-7783</span>
-          <span className="cursor-pointer my-1 mx-0 font-semibold text-slate-600 ">hello@food.com</span>
-          <span className="cursor-pointer my-1 mx-0 font-semibold text-slate-600 ">press@food.com</span>
-          <span className="cursor-pointer my-1 mx-0 font-semibold text-slate-600 ">contact@food.com</span>
-        </div>
-        <div className="footer-section-columns flex flex-col min-w-min">
-          <span className="cursor-pointer my-1 mx-0 font-semibold text-slate-600 ">Terms & Conditions</span>
-          <span className="cursor-pointer my-1 mx-0 font-semibold text-slate-600 ">Privacy Policy</span>
+        <div className="right">
+          <img src="/img/payment.png" alt="" />
         </div>
       </div>
     </div>
