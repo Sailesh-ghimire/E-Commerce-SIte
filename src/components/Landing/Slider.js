@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import EastOutlinedIcon from "@mui/icons-material/EastOutlined";
 import WestOutlinedIcon from "@mui/icons-material/WestOutlined";
-import "./Slider.css";
+// import "./Slider.css";
 
 export const Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -20,17 +20,17 @@ export const Slider = () => {
   };
 
   return (
-    <div className="slider">
-      <div className="container" style={{transform:`translateX(-${currentSlide * 100}vw)`}}>
-        <img src={data[0]} alt="" />
-        <img src={data[1]} alt="" />
-        <img src={data[2]} alt="" />
+    <div className="slider h-full w-full relative overflow-hidden">
+      <div className="container h-full flex transition-all w-fit" style={{transform:`translateX(-${currentSlide * 100}vw)`}}>
+        <img className=" w-full h-full object-cover" src={data[0]} alt="" />
+        <img className=" w-full h-full object-cover" src={data[1]} alt="" />
+        <img className=" w-full h-full object-cover" src={data[2]} alt="" />
       </div>
-      <div className="icons">
-        <div className="icon" onClick={prevSlide}>
+      <div className="icons w-fit flex absolute left-0 right-0 bottom-24 gap-3 m-auto">
+        <div className="icon w-12 h-12 border-solid border-2 border-black flex items-center justify-center cursor-pointer " onClick={prevSlide}>
           <WestOutlinedIcon />
         </div>
-        <div className="icon" onClick={nextSlide}>
+        <div className="icon w-12 h-12 border-solid border-2 border-black flex items-center justify-center cursor-pointer" onClick={nextSlide}>
           <EastOutlinedIcon />
         </div>
       </div>

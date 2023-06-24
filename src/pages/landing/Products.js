@@ -2,7 +2,6 @@ import React from "react";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import List from "../landing/List";
-import "./Products.css";
 
 export const Products = () => {
   const catId = parseInt(useParams().id);
@@ -10,28 +9,28 @@ export const Products = () => {
   const [sort, setSort] = useState(null);
 
   return (
-    <div className="products">
-      <div className="left">
-        <div className="filterItem">
-          <h2>Product Categories</h2>
+    <div className="products py-8 px-12 flex">
+      <div className="left flex-1 sticky h-full top-12">
+        <div className="filterItem mb-8">
+          <h2 className=" font-normal mb-5">Product Categories</h2>
          
-            <div className="inputItem">
+            <div className="inputItem mb-3">
               <input type="checkbox" id="1" value={1} />
-              <label htmlFor="1">shoes</label>
+              <label className=" ml-3" htmlFor="1">shoes</label>
             </div>
-            <div className="inputItem">
+            <div className="inputItem mb-3">
               <input type="checkbox" id="2" value={2} />
-              <label htmlFor="2">shoes</label>
+              <label className=" ml-3" htmlFor="2">shoes</label>
             </div>
-            <div className="inputItem">
+            <div className="inputItem mb-3">
               <input type="checkbox" id="3" value={3} />
-              <label htmlFor="3">shoes</label>
+              <label className=" ml-3" htmlFor="3">shoes</label>
             </div>
          
         </div>
-        <div className="filterItem">
-          <h2>Filter by price</h2>
-          <div className="inputItem">
+        <div className="filterItem mb-8">
+          <h2 className=" font-normal mb-5">Filter by price</h2>
+          <div className="inputItem mb-3">
             <span>0</span>
             <input
               type="range"
@@ -42,9 +41,9 @@ export const Products = () => {
             <span>{maxPrice}</span>
           </div>
         </div>
-        <div className="filterItem">
-          <h2>Sort by</h2>
-          <div className="inputItem">
+        <div className="filterItem mb-8">
+          <h2 className=" font-normal mb-5">Sort by</h2>
+          <div className="inputItem mb-3 ">
             <input
               type="radio"
               id="asc"
@@ -52,9 +51,9 @@ export const Products = () => {
               name="price"
               onChange={(e) => setSort("asc")}
             />
-            <label htmlFor="asc">Price (Lowest first)</label>
+            <label className=" ml-3" htmlFor="asc">Price (Lowest first)</label>
           </div>
-          <div className="inputItem">
+          <div className="inputItem mb-3 ">
             <input
               type="radio"
               id="desc"
@@ -62,13 +61,13 @@ export const Products = () => {
               name="price"
               onChange={(e) => setSort("desc")}
             />
-            <label htmlFor="desc">Price (Highest first)</label>
+            <label className=" ml-3" htmlFor="desc">Price (Highest first)</label>
           </div>
         </div>
       </div>
-      <div className="right">
+      <div className="right flex-1">
         <img
-          className="catImg"
+          className="catImg w-full h-80 object-cover mb-12"
           src="https://images.pexels.com/photos/1074535/pexels-photo-1074535.jpeg?auto=compress&cs=tinysrgb&w=1600"
           alt=""
         />

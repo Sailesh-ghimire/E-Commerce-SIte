@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "../../components/Landing/Card";
 import product1 from "../../images/1.jpg";
-import "./FeaturedProducts.css";
+// import "./FeaturedProducts.css";
 
 const FeaturedProducts = ({type}) => {
 
@@ -39,10 +39,10 @@ const FeaturedProducts = ({type}) => {
   
 
   return (
-    <div className="featuredProducts">
-      <div className="top">
-        <h1>{type} products</h1>
-        <p>
+    <div className="featuredProducts my-24 mx-52">
+      <div className="top flex items-center justify-between mb-12">
+        <h1 className=" flex-1 capitalize">{type} products</h1>
+        <p className=" flex-1">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
           suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
@@ -50,7 +50,7 @@ const FeaturedProducts = ({type}) => {
           suspendisse ultrices gravida. Risus commodo viverra maecenas.
         </p>
       </div>
-      <div className="bottom">
+      <div className="bottom flex justify-center gap-12">
         {data.map(item=>(
         <Card item={item} key={item.id} />
         ))}

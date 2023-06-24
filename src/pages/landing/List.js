@@ -1,7 +1,6 @@
 import React from "react";
 import product1 from "../../images/1.jpg";
 
-import "./List.css";
 import Card from "../../components/Landing/Card";
 
 export const List = () => {
@@ -37,7 +36,7 @@ export const List = () => {
     ];
 
   return (
-    <div className="list">
+    <div className="list flex justify-between flex-wrap">
       {data?.map(item => (<Card item={item} key={item.id} />
       ))}
     </div>
