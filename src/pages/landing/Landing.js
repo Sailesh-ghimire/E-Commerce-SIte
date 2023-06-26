@@ -10,9 +10,9 @@ export const Landing2 = () => {
     <Slider/>
     <FeaturedProducts type="featured"/>
     <Categories/>
-    <FeaturedProducts type="trending"/>
+    {/* <FeaturedProducts type="trending"/> */}
     <Contact/>
-    hshs
+    
   </div>
   )
 }

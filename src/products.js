@@ -6,13 +6,17 @@ export const PRODUCTS = [
        productName: "Extinguisher",
        price: 100.0,
        productImage: product1,
+       title: "Barca",
+           desc: "Messi",
     },
 
     {
         id: 2,
         productName: "Extinguisher",
-        price: 100.0,
+        price: 500.0,
         productImage: product1,
+        title: "Barca",
+           desc: "Messi",
      },
 
      {
@@ -20,6 +24,8 @@ export const PRODUCTS = [
         productName: "Extinguisher",
         price: 100.0,
         productImage: product1,
+        title: "Barca",
+           desc: "Messi",
      },
 
      {
@@ -27,5 +33,7 @@ export const PRODUCTS = [
         productName: "Extinguisher",
         price: 100.0,
         productImage: product1,
+        title: "Barca",
+           desc: "Messi",
      }
 ]
