@@ -25,11 +25,6 @@ const Product = () => {
                         {images[0]} alt="" onClick={(e) => setSelectedImg(0)} />
                     <img src={images[1]} alt="" onClick={(e) => setSelectedImg(1)} />
 
-
-
-
-
-
                 </div>
                 <div className="mainImg flex">
                     <img className=" w-full max-h-full object-cover"
@@ -83,9 +78,7 @@ const Product = () => {
                     <span>FAQ</span>
                 </div>
             </div>
-
-
-        </div>
+        </div>      
     );
 };
 

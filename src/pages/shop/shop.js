@@ -12,6 +12,7 @@ export const Shop = () => {
                 {PRODUCTS.map((product) => (
                     <Product data={product} />
                 ))}
+                
             </div>
 
         </div>

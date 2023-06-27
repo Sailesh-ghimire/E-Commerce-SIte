@@ -6,6 +6,7 @@ export const PRODUCTS = [
        productName: "Extinguisher",
        price: 100.0,
        productImage: product1,
+       
        title: "Barca",
            desc: "Messi",
     },

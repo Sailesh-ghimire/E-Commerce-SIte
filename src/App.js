@@ -96,7 +96,6 @@ function App() {
         <Routes>
           <Route path="/">
             <Route index element={<Landing2 />} />
-            {/* <Route path="demo" element={<Landing2 />} /> */}
             <Route path="admin" element={<Home />} />
           <Route path="cart" element={<Cart />} />
             <Route path="shop" element={<Shop />} />
