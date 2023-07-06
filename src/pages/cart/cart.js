@@ -43,7 +43,7 @@ export const Cart = () => {
 
 
 
-    <div className='cart absolute right-5 top-20 z-50 p-5 shadow-lg '>
+    <div className='cart absolute right-5 top-20 z-50 p-5 shadow-lg bg-white '>
       
         <h1 className='mb-8 font-normal text-2xl'>Your Cart Items</h1>
       

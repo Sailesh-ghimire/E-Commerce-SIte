@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export const Card = ({ item }) => {
   return (
-    <Link className="link" to={`/product/${item.id}`}>
+    <Link className="link" to={`/shop`}>
       <div className="card w-72 flex flex-col gap-3 mb-12">
         <div className="image w-full h-96 overflow-hidden relative" >
           <img src={item.productImage} alt="" className="mainImg w-full h-full absolute object-cover z-0"/>
@@ -16,7 +16,7 @@ export const Card = ({ item }) => {
           <h3 className=' text-lg font-medium'>${item.price}</h3>
         </div>
       </div>
-    </Link>
+     </Link>
   )
 }
 

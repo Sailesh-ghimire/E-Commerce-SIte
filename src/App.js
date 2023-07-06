@@ -90,7 +90,8 @@ function App() {
 
   return (
     <div className={darkMode ? "app dark" : "app"}>
-      <ShopContextProvider>
+      <div className=" overflow-hidden">
+        <ShopContextProvider>
       <BrowserRouter>
       <MainNavbar/>
         <Routes>
@@ -101,14 +102,14 @@ function App() {
             <Route path="shop" element={<Shop />} />
             {/* <Route path="login" element={<Login />} /> */}
             
-            <Route path="products">
+            <Route path="products" element={<Products />} />
               
-              <Route path=":id" element={<Products />} />
+              {/* <Route path=":id" element={<Products />} /> */}
               {/* <Route
                 path="new"
                 element={<New inputs={productInputs} title="Add New Product" />}
               /> */}
-            </Route>
+            {/* </Route> */}
             <Route path="product">
               
               <Route path=":id" element={<Product />} />
@@ -118,6 +119,7 @@ function App() {
         <Footer/>
       </BrowserRouter>
       </ShopContextProvider>
+    </div>
     </div>
   );
 }

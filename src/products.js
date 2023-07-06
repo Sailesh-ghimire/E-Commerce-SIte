@@ -1,40 +1,36 @@
-import product1 from "./images/1.jpg";
+import product1 from "./images/product1.jpg";
+import product2 from "./images/product2.jpg";
+import product3 from "./images/product3.jpg";
+
 
 export const PRODUCTS = [
     {
        id: 1,
        productName: "Extinguisher",
-       price: 100.0,
+       price: 800.0,
        productImage: product1,
        
-       title: "Barca",
+       title: "Extinguisher",
            desc: "Messi",
     },
 
     {
         id: 2,
-        productName: "Extinguisher",
-        price: 500.0,
-        productImage: product1,
-        title: "Barca",
+        productName: "Hose Pipe",
+        price: 200.0,
+        productImage: product2,
+        title: "Hose Pipe",
            desc: "Messi",
      },
 
      {
         id: 3,
-        productName: "Extinguisher",
-        price: 100.0,
-        productImage: product1,
-        title: "Barca",
-           desc: "Messi",
-     },
-
-     {
-        id: 4,
-        productName: "Extinguisher",
-        price: 100.0,
-        productImage: product1,
-        title: "Barca",
+        productName: "Extinguisher v2",
+        price: 1000.0,
+        productImage: product3,
+        title: "Extinguisher v2",
            desc: "Messi",
      }
+
+     
 ]
