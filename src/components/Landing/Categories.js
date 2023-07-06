@@ -1,15 +1,22 @@
 import React from "react";
 // import "./Categories.css";
 import { Link } from "react-router-dom";
+import cat1 from "../../images/pexels-breno-cardoso-10892548.jpg"
+import cat2 from "../../images/pexels-jan-van-der-wolf-16517206.jpg"
+import cat3 from "../../images/pexels-matheus-bertelli-3080668.jpg"
+import cat4 from "../../images/product1.jpg"
+import cat5 from "../../images/product2.jpg"
+import cat6 from "../../images/product3.jpg"
+
 
 export const Categories = () => {
   return (
     <div className="categories flex h-4/5 gap-3 m-3">
       <div className="col flex-1 flex flex-col gap-3">
         <div className="row flex-1 flex gap-3 relative overflow-hidden">
-          <img className=" w-full h-full object-cover" src="https://images.pexels.com/photos/818992/pexels-photo-818992.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" />
+          <img className=" w-full h-full object-cover" src={cat1} alt="" />
           <button className=" absolute min-w-full w-fit h-12 p-3 top-0 bottom-0 left-0 right-0 m-auto cursor-pointer border-none uppercase font-medium">
-            <Link className="link" to="/products/1">
+            <Link className="link" to="/shop">
               Sale
             </Link>
           </button>
@@ -17,12 +24,12 @@ export const Categories = () => {
         <div className="row flex-1 flex gap-3 relative overflow-hidden">
 
           <img className=" w-full h-full object-cover"
-            src="https://images.pexels.com/photos/2036646/pexels-photo-2036646.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            src={cat2}
             alt=""
           />
           <button className=" absolute min-w-full w-fit h-12 p-3 top-0 bottom-0 left-0 right-0 m-auto cursor-pointer border-none uppercase font-medium">
-            <Link to="/products/1" className="link">
-              Women
+            <Link to="/shop" className="link">
+              category1
             </Link>
           </button>
         </div>
@@ -31,13 +38,12 @@ export const Categories = () => {
         <div className="row flex-1 flex gap-3 relative overflow-hidden">
           {" "}
           <img className=" w-full h-full object-cover"
-            src="https://images.pexels.com/photos/1813947/pexels-photo-1813947.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            src={cat3}
             alt=""
           />
           <button className=" absolute min-w-full w-fit h-12 p-3 top-0 bottom-0 left-0 right-0 m-auto cursor-pointer border-none uppercase font-medium">
-            <Link to="/products/1" className="link">
-              New Season
-            </Link>
+            <Link to="/shop" className="link">
+            category1            </Link>
           </button>
         </div>
       </div>
@@ -46,12 +52,12 @@ export const Categories = () => {
           <div className="col col-l flex-1 flex flex-col gap-3">
             <div className="row flex-1 flex gap-3 relative overflow-hidden">
               <img className=" w-full h-full object-cover"
-                src="https://images.pexels.com/photos/1192609/pexels-photo-1192609.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                src={cat4}
                 alt=""
               />
               <button className=" absolute min-w-full w-fit h-12 p-3 top-0 bottom-0 left-0 right-0 m-auto cursor-pointer border-none uppercase font-medium">
-                <Link to="/products/1" className="link">
-                  Men
+                <Link to="/shop" className="link">
+                category1
                 </Link>
               </button>
             </div>
@@ -60,12 +66,12 @@ export const Categories = () => {
             <div className="row flex-1 flex gap-3 relative overflow-hidden">
               {" "}
               <img className=" w-full h-full object-cover"
-                src="https://images.pexels.com/photos/2703202/pexels-photo-2703202.jpeg?auto=compress&cs=tinysrgb&w=1600"
+                src={cat5}
                 alt=""
               />
               <button className=" absolute min-w-full w-fit h-12 p-3 top-0 bottom-0 left-0 right-0 m-auto cursor-pointer border-none uppercase font-medium">
-                <Link to="/products/1" className="link">
-                  Accessories
+                <Link to="/shop" className="link">
+                category1
                 </Link>
               </button>
             </div>
@@ -73,12 +79,12 @@ export const Categories = () => {
         </div>
         <div className="row flex-1 flex gap-3 relative overflow-hidden">
           <img className=" w-full h-full object-cover"
-            src="https://images.pexels.com/photos/1159670/pexels-photo-1159670.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            src={cat6}
             alt=""
           />
           <button className=" absolute min-w-full w-fit h-12 p-3 top-0 bottom-0 left-0 right-0 m-auto cursor-pointer border-none uppercase font-medium">
-            <Link to="/products/1" className="link">
-              Shoes
+            <Link to="/shop" className="link">
+            category1
             </Link>
           </button>
         </div>

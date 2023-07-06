@@ -16,15 +16,15 @@ export const Products = () => {
          
             <div className="inputItem mb-3">
               <input type="checkbox" id="1" value={1} />
-              <label className=" ml-3" htmlFor="1">shoes</label>
+              <label className=" ml-3" htmlFor="1">Extinguisher</label>
             </div>
             <div className="inputItem mb-3">
               <input type="checkbox" id="2" value={2} />
-              <label className=" ml-3" htmlFor="2">shoes</label>
+              <label className=" ml-3" htmlFor="2">Hose Pipe</label>
             </div>
             <div className="inputItem mb-3">
               <input type="checkbox" id="3" value={3} />
-              <label className=" ml-3" htmlFor="3">shoes</label>
+              <label className=" ml-3" htmlFor="3">Tools</label>
             </div>
          
         </div>
@@ -65,7 +65,7 @@ export const Products = () => {
           </div>
         </div>
       </div>
-      <div className="right flex-1">
+      <div className="right flex-auto">
         <img
           className="catImg w-full h-80 object-cover mb-12"
           src="https://images.pexels.com/photos/1074535/pexels-photo-1074535.jpeg?auto=compress&cs=tinysrgb&w=1600"

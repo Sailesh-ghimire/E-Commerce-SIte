@@ -21,7 +21,7 @@ export const Sidebar = () => {
     <div className="sidebar flex-1 border-r border-solid min-h-screen bg-white">
       <div className="top h-12 flex items-center justify-center">
         <Link to="/" style={{ textDecoration: "none" }}>
-          <span className="logo text-xl text-b font-bold">lamadmin</span>
+          <span className="logo text-xl text-b font-bold">FIREGUARD</span>
         </Link>
       </div>
       <hr className="h-0 border-solid border" />
