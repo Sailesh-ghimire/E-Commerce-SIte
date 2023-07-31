@@ -4,10 +4,6 @@ import { PRODUCTS } from "../../products";
 
 
 export const FeaturedProducts = ({type}) => {
-  
-
- 
-  
 
   return (
     <div className="featuredProducts my-24 mx-52">

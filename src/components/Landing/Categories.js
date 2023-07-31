@@ -1,5 +1,4 @@
 import React from "react";
-// import "./Categories.css";
 import { Link } from "react-router-dom";
 import cat1 from "../../images/pexels-breno-cardoso-10892548.jpg"
 import cat2 from "../../images/pexels-jan-van-der-wolf-16517206.jpg"

@@ -11,7 +11,7 @@ export const PRODUCTS = [
        productImage: product1,
        
        title: "Extinguisher",
-           desc: "Messi",
+           desc: "Safety",
     },
 
     {
@@ -20,7 +20,7 @@ export const PRODUCTS = [
         price: 200.0,
         productImage: product2,
         title: "Hose Pipe",
-           desc: "Messi",
+           desc: "Safety",
      },
 
      {
@@ -29,7 +29,7 @@ export const PRODUCTS = [
         price: 1000.0,
         productImage: product3,
         title: "Extinguisher v2",
-           desc: "Messi",
+           desc: "Safety",
      }
 
      
