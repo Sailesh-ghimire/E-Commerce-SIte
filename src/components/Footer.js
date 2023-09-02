@@ -7,7 +7,7 @@ import PinterestIcon from "@mui/icons-material/Pinterest";
 
 export const Footer = () => {
   return (
-    <div className=" bg-slate-800 text-white">
+    <div className=" bg-rose-600 text-white">
       <div className="footer mt-0 pt-5 mr-52 mb-0 ml-52">
       <div className="top flex gap-11">
         <div className="item flex-1 flex flex-col gap-2 text-justify text-sm">

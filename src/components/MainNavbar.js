@@ -16,7 +16,7 @@ export const MainNavbar = () => {
   const [open,setOpen] = useState(false)
   const { dispatch } = useContext(DarkModeContext);
   return (
-    <div className="navbar h-20 ">
+    <div className="navbar h-20 bg-rose-600">
       <div className="wrapper py-2 px-8 flex items-center justify-between">
         <div className="left flex items-center gap-6">
         
@@ -30,9 +30,7 @@ export const MainNavbar = () => {
           <div className="item flex items-center text-lg">
             <Link className ="link" to="/">Homepage</Link>
           </div>
-          <div className="item flex items-center text-lg">
-            <Link className ="link" to="/">About</Link>
-          </div>
+          
           <div className="item flex items-center text-lg">
             <Link className ="link" to="/products">Our Products</Link>
           </div>

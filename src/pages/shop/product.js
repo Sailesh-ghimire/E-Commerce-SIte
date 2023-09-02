@@ -22,7 +22,7 @@ export const Product = (props) => {
             <span className="price text-3xl font-medium">${price}</span>
             <p className=" text-lg font-light text-justify">{desc}</p>
 
-            <button className='addToCartBttn bg-transparent border-2 border-slate-800 min-w-full px-2 py-1 rounded-2xl hover:bg-orange-500 hover:cursor-pointer hover:text-white '
+            <button className='addToCartBttn bg-transparent border-2 border-slate-800 min-w-full px-2 py-1 rounded-2xl hover:bg-emerald-500 hover:cursor-pointer hover:text-white '
                 onClick={() => addToCart(id)}>
                     <AddShoppingCartIcon />
                 Add to Cart{cartItemCount > 0 && <> ({cartItemCount})</>}

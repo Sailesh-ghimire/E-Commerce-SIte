@@ -12,6 +12,7 @@ import { DarkModeContext } from "./context/darkModeContext";
 import {Landing2} from "./pages/landing/Landing";
 import Footer from './components/Footer';
 import Products from "./pages/landing/Products";
+import ProductDisplay from "./pages/ProductDisplay";
 
 function App() {
   const { darkMode } = useContext(DarkModeContext);
@@ -29,7 +30,8 @@ function App() {
           <Route path="cart" element={<Cart />} />
             <Route path="shop" element={<Shop />} />
             
-            <Route path="products" element={<Products />} />              
+            <Route path="products" element={<Products />} />
+            <Route path="product/:id" element={<ProductDisplay/>} />              
        
          </Route>
         </Routes>

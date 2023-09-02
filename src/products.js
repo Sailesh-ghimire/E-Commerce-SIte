@@ -5,7 +5,7 @@ import product3 from "./images/product3.jpg";
 
 export const PRODUCTS = [
     {
-       id: 1,
+       id: 0,
        productName: "Extinguisher",
        price: 800.0,
        productImage: product1,
@@ -15,7 +15,7 @@ export const PRODUCTS = [
     },
 
     {
-        id: 2,
+        id: 1,
         productName: "Hose Pipe",
         price: 200.0,
         productImage: product2,
@@ -24,7 +24,7 @@ export const PRODUCTS = [
      },
 
      {
-        id: 3,
+        id: 2,
         productName: "Extinguisher v2",
         price: 1000.0,
         productImage: product3,
