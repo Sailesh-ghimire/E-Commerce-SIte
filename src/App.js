@@ -13,6 +13,7 @@ import {Landing2} from "./pages/landing/Landing";
 import Footer from './components/Footer';
 import Products from "./pages/landing/Products";
 import ProductDisplay from "./pages/ProductDisplay";
+import Khalti from "./components/Khalti/Khalti";
 
 function App() {
   const { darkMode } = useContext(DarkModeContext);
@@ -32,7 +33,7 @@ function App() {
             
             <Route path="products" element={<Products />} />
             <Route path="product/:id" element={<ProductDisplay/>} />              
-       
+            <Route path="khalti" element={<Khalti/>}/>
          </Route>
         </Routes>
         <Footer/>
