@@ -49,14 +49,12 @@ export const ProductDisplay = (props) => {
                 onClick={() => addToCart(id)}>
               <AddShoppingCartIcon /> ADD TO CART{cartItemCount > 0 && <> ({cartItemCount})</>}
             </button>
-            <div className="info flex flex-col gap-3 text-sm mt-8">
-              <span>Vendor: Polo</span>
-              <span>Product Type: T-Shirt</span>
-              <span>Tag: T-Shirt, Women, Top</span>
-            </div>
+            
             <hr className=' w-48' />
             <div className="details">
-              <span>DESCRIPTION</span>
+              <span>{product.productName}</span>
+              <hr className=' w-48' />
+              <span>{product.desc}</span>
               <hr className=' w-48' />
               <span>ADDITIONAL INFORMATION</span>
               <hr className=' w-48' />

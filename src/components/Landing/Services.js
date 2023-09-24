@@ -1,7 +1,7 @@
 import React from 'react'
-import delivery from '../images/delivery.png'
-import warranty from '../images/warranty.png'
-import service from '../images/service.png'
+import delivery from '../../images/delivery.png'
+import warranty from '../../images/warranty.png'
+import service from '../../images/service.png'
 
 
 const Services = () => {

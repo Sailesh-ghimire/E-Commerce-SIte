@@ -50,7 +50,7 @@ export const MainNavbar = () => {
                </div>
             <div className="cartIcon relative" onClick={()=>setOpen(!open)}>
               <ShoppingCartOutlinedIcon/>
-              <span className="text-white text-xs w-5 h-5 rounded-lg absolute -right-3 -top-3 flex items-center justify-center ">0</span>
+              
               
             </div>
           </div>

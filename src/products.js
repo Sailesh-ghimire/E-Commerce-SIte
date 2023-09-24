@@ -5,31 +5,31 @@ import product3 from "./images/product3.jpg";
 
 export const PRODUCTS = [
     {
-       id: 0,
+       id: 1,
        productName: "Extinguisher",
        price: 800.0,
        productImage: product1,
        
        title: "Extinguisher",
-           desc: "Safety",
+           desc: "Warranty, long lasting, efficiency",
     },
 
     {
-        id: 1,
+        id: 2,
         productName: "Hose Pipe",
         price: 200.0,
         productImage: product2,
         title: "Hose Pipe",
-           desc: "Safety",
+           desc: "100M long, flexible in shape, strong built quality",
      },
 
      {
-        id: 2,
+        id: 3,
         productName: "Extinguisher v2",
         price: 1000.0,
         productImage: product3,
         title: "Extinguisher v2",
-           desc: "Safety",
+           desc: "Warranty, long lasting, efficiency",
      }
 
      

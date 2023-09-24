@@ -1,6 +1,5 @@
 
 import "./App.css";
-import {Home} from "./pages/home";
 import { MainNavbar } from './components/MainNavbar';
 import { Cart } from './pages/cart/cart';
 import { Shop } from './pages/shop/shop';
@@ -27,7 +26,6 @@ function App() {
         <Routes>
           <Route path="/">
             <Route index element={<Landing2 />} />
-            <Route path="admin" element={<Home />} />
           <Route path="cart" element={<Cart />} />
             <Route path="shop" element={<Shop />} />
             
