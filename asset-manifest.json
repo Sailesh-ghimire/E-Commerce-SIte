@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/E-Commerce-SIte/static/css/main.0aa4e584.css",
+    "main.js": "/E-Commerce-SIte/static/js/main.4813db86.js",
+    "static/js/787.0e31295a.chunk.js": "/E-Commerce-SIte/static/js/787.0e31295a.chunk.js",
+    "static/media/product1.jpg": "/E-Commerce-SIte/static/media/product1.e83b79b79a50f9c305e4.jpg",
+    "static/media/product2.jpg": "/E-Commerce-SIte/static/media/product2.2f0b2fd56c3179fa1228.jpg",
+    "static/media/slider1.jpg": "/E-Commerce-SIte/static/media/slider1.c66aeb22bdb014a17321.jpg",
+    "static/media/product3.jpg": "/E-Commerce-SIte/static/media/product3.22b9fe9ee38edf7f332c.jpg",
+    "static/media/slider2.jpg": "/E-Commerce-SIte/static/media/slider2.0721c24265fed170d044.jpg",
+    "static/media/slider3.jpg": "/E-Commerce-SIte/static/media/slider3.039b121e7c67dbfc117d.jpg",
+    "static/media/warranty.png": "/E-Commerce-SIte/static/media/warranty.3c9b378f742be8cb7904.png",
+    "static/media/delivery.png": "/E-Commerce-SIte/static/media/delivery.371dc20629bc7a657046.png",
+    "static/media/service.png": "/E-Commerce-SIte/static/media/service.6e0092b9cfc8ff7deb0f.png",
+    "static/media/blackonwhite.png": "/E-Commerce-SIte/static/media/blackonwhite.2d0534def521810b4d9f.png",
+    "index.html": "/E-Commerce-SIte/index.html",
+    "main.0aa4e584.css.map": "/E-Commerce-SIte/static/css/main.0aa4e584.css.map",
+    "main.4813db86.js.map": "/E-Commerce-SIte/static/js/main.4813db86.js.map",
+    "787.0e31295a.chunk.js.map": "/E-Commerce-SIte/static/js/787.0e31295a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0aa4e584.css",
+    "static/js/main.4813db86.js"
+  ]
+}
